@@ -1,0 +1,9 @@
+None.
+
+Explanation of probable O(n) time (n = no of employees in the organisation) :-
+   Only in case of firing an employee who manages other employees, it would take O(k) time (where k = no of employees working previously under the fired employee)
+to change the boss ids and references of each and every child node. This may lead to the worst time complexity to O(n) in case most of the [O(n)] employees
+work under the employee. We can't do it in O(log n) as to delete a node, we have to remove each and every pointer refernerring to that node amd so
+we must have to traverse the whole employees list one by one.
+
+Else all other things are implemented in either O(log n) or O(1) time only.
